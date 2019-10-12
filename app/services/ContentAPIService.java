@@ -32,6 +32,7 @@ public class ContentAPIService {
     public static List<ImageDto> getRandomPicture(String endPointUrl, WSClient wsClient, int cacheTime, SyncCacheApi cache) {
         String urlPicture = "";
         ImageDto result = new ImageDto();
+        result.setId(1L);
         List listofImage = new ArrayList<>();
         try {
             urlPicture = cache.get("pictureCahe");
