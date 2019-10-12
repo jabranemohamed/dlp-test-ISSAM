@@ -1,0 +1,7 @@
+@(images : List[ImageDto])
+
+<div class="main" style="margin:0 auto ; width:1080px">
+@for(image <- images) { <img src=" @image.getDownload_url()" width="250" height="250">
+  }
+</div>
+ 
